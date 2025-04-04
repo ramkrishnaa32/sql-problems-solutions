@@ -54,6 +54,7 @@ INSERT INTO Bonus (empId, bonus) VALUES
 
 "Write a solution to report the name and bonus amount of each employee with a bonus less than 1000."
 
+-- normal table
 SELECT e.name, b.bonus
 FROM Employee e
 LEFT JOIN Bonus b
