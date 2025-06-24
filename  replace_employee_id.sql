@@ -51,3 +51,8 @@ INSERT INTO EmployeeUNI (id, unique_id) VALUES
 (3, 1),
 (11, 2),
 (90, 3);
+
+-- Write a solution to show the unique ID of each user, If a user does not have a unique ID replace just show null.
+SELECT u.unique_id, e.name
+FROM Employees e
+LEFT JOIN EmployeeUNI u ON e.id = u.id;
